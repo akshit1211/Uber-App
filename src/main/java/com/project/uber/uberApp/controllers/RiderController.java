@@ -16,13 +16,10 @@ public class RiderController {
 
     private final RiderService riderService;
 
-//    public RiderController(RiderService riderService) {
-//        this.riderService = riderService;
-//    }
-
     @PostMapping("/requestRide")
     public ResponseEntity<RideRequestDto> requestRide(@RequestBody RideRequestDto rideRequestDto) {
         return ResponseEntity.ok(riderService.requestRide(rideRequestDto));
     }
+
 }
 

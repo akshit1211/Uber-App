@@ -24,5 +24,6 @@ public class User {
 
     @ElementCollection(fetch = FetchType.LAZY)
     @Enumerated(EnumType.STRING)
+    @Setter
     private Set<Role> roles;
 }

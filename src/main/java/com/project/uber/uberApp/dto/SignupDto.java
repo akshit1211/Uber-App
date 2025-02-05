@@ -1,14 +1,15 @@
 package com.project.uber.uberApp.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class SignupDto {
     private String name;
     private String email;
     private String password;
+
 }
