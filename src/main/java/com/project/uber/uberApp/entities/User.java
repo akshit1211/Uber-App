@@ -8,14 +8,15 @@ import lombok.Setter;
 import java.util.Set;
 
 @Entity
+@Table(name = "app_user")
 @Getter
 @Setter
-@Table(name = "app_user")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
     @Column(unique = true)
@@ -24,6 +25,5 @@ public class User {
 
     @ElementCollection(fetch = FetchType.LAZY)
     @Enumerated(EnumType.STRING)
-    @Setter
     private Set<Role> roles;
 }

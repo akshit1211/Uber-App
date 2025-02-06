@@ -1,6 +1,5 @@
 package com.project.uber.uberApp.advices;
 
-
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.http.HttpStatus;
@@ -16,4 +15,3 @@ public class ApiError {
     private List<String> subErrors;
 
 }
-

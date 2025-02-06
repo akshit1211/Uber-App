@@ -4,14 +4,11 @@ import com.project.uber.uberApp.dto.DriverDto;
 import com.project.uber.uberApp.dto.SignupDto;
 import com.project.uber.uberApp.dto.UserDto;
 import com.project.uber.uberApp.entities.User;
-import com.project.uber.uberApp.entities.Rider;
 import com.project.uber.uberApp.entities.enums.Role;
 import com.project.uber.uberApp.exceptions.RuntimeConflictException;
 import com.project.uber.uberApp.repositories.UserRepository;
 import com.project.uber.uberApp.services.AuthService;
 import com.project.uber.uberApp.services.RiderService;
-import org.springframework.stereotype.Service;
-
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
